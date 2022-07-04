@@ -1,0 +1,31 @@
+{
+  "name": "ts-node_02",
+  "version": "1.0.0",
+  "description": "Learn ts-node and bunyan logger.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "dev:ts": "cross-env NODE_ENV=development ts-node index.ts | bunyan",
+    "dev:ts:start": "bash -c \"cross-env ENV=development ts-node index.ts | bunyan\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Wibawa <ryan.wibawa@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bunyan": "^1.8.8",
+    "@types/node": "^18.0.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "cross-env": "^7.0.3",
+    "fs-extra": "^10.1.0",
+    "ts-node": "^10.8.1"
+  },
+  "engines": {
+    "node": "~10.15.3",
+    "npm": "~6.4.1"
+  },
+  "repository": "git@github.com:rwibawa/ts-node_02.git"
+}
